@@ -6,6 +6,7 @@ class PasswordGenerator:
 	lower, upper, numbers, symbols = ascii_lowercase, ascii_uppercase, digits, punctuation
 	ALL = {'lower': lower, 'upper': upper, 'numbers': numbers, 'symbols': symbols}
 	ALL_STR = ''.join(list(ALL.values()))
+	
 	def __init__(self, length=12, unique_letters=False, no_double=False):
 		self.length = length
 		self.wanted_args = {}
@@ -41,8 +42,7 @@ class PasswordGenerator:
 		if self.no_double:
 			while self.double_check():
 				self.shuffle()
-
-
+				
 	def unique(self):
 		assert (self.length <= len(self.wanted_string)), "PasswordLengthError: the length you want MUST be <= length of choosen characters"
 
