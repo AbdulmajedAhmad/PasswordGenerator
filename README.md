@@ -1,7 +1,7 @@
 # PasswordGenerator
 A password (or random string, or numbers) generator with python
 
-## __init__ arguments:
+## constructor arguments:
    ### unique_characters:
       no repeated characters in the password.
   ### no_double:
