@@ -6,7 +6,12 @@ You can after that: shuffle the password, lowercasing all letters, or uppering t
 
 ## constructor arguments:
    ### unique_characters:
-      no repeated characters in the password.
+   no repeated characters in the password.
   ### no_double:
-      no same two letters next to each other.
+   no same two letters next to each other.
+  
+## Requirements:
+   ### pyperclip module
+      pip install pyperclip
+   ### random, and string modules (which are automatically installed with python)
   
