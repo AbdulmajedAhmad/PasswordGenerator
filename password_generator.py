@@ -32,7 +32,7 @@ class PasswordGenerator:
 
 	def un_unique(self):
 		while not all(self.wanted_args.values()):
-			self.password = r.choices(self.wanted_string, k=self.length)
+			self.password = r.choices(self.wanted_string, k=self.length) 
 
 			for letter in self.password:
 				for name, group in self.wanted_groups.items(): # name = key, group = value
