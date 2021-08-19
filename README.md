@@ -11,6 +11,7 @@ You can after that: shuffle the password, lowercasing all letters, or uppering t
    no same two letters next to each other.
   
 ## Requirements:
+   ### Python 3
    ### pyperclip module
       pip install pyperclip
    ### random, and string modules (which are automatically installed with python)
